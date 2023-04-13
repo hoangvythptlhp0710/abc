@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/thumbnail_expert_wallet" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:gravity="center"
+        android:text="Currency Converter"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:text="FROM"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:text="TO"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/editableInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:hint="ENTER THE AMOUNT"
+        android:minHeight="50dp"
+        android:textAlignment="center" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <Button
+            android:id="@+id/btnusd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:text="USD" />
+
+        <Button
+            android:id="@+id/btneur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EUR"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="12dp"/>
+        <Button
+            android:id="@+id/btnkrn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KRN"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+        <Button
+            android:id="@+id/btnjpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="JPN"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="12dp"/>
+        <Button
+            android:id="@+id/btnchn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHN"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="12dp"/>
+        <Button
+            android:id="@+id/btnRus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RUS"
+            android:layout_weight="1"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginStart="12dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        />
+
+</LinearLayout>
