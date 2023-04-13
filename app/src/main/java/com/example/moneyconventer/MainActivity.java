@@ -52,16 +52,15 @@ public class MainActivity extends AppCompatActivity {
             from.setText("From USD to VND");
             to.setText( amount +" USD$ = " + convertResult +"VND");
 
-        });
+        })
 
-        btneur.setOnClickListener(view -> {
-            amount = editableInput.getText().toString();
-            vnd = 25526.70;
-            convertResult = Integer.parseInt(amount)*(vnd);
-            result.setText(String.valueOf(convertResult));
-            from.setText("From EUR to VND");
-            to.setText( amount +" EUR = " + convertResult +"VND");
-        });
+
+                asdfkqwejrqwer
+                        qlfjaslkdjfqwer
+                        asdkjwqeurioqwuper
+                                asdfjqlkwejroiqwel
+                                asdfjqwpoeriuoqwpieruqwek
+
         btnkrn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
